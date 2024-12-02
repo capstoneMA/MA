@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 날짜  -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- 날짜선택 -->
+    <TextView
+        android:id="@+id/textView_selected_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택하신 날짜: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 시간 -->
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간 선택"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textSize="20dp" />
+
+    <!-- 시간 슬롯 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="1dp">
+
+        <!-- 시간선택 버튼 -->
+        <Button
+            android:id="@+id/button_time_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:paddingHorizontal="8dp"
+            android:backgroundTint="#ff7f00"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="4dp"/>
+
+        <Button
+            android:id="@+id/button_time_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:00"
+            android:paddingHorizontal="8dp"
+            android:backgroundTint="#ff7f00"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="4dp"/>
+
+        <Button
+            android:id="@+id/button_time_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:00"
+            android:paddingHorizontal="8dp"
+            android:backgroundTint="#ff7f00"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="4dp"/>
+
+        <Button
+            android:id="@+id/button_time_17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:00"
+            android:paddingHorizontal="8dp"
+            android:backgroundTint="#ff7f00"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="1dp">
+
+        <Button
+            android:id="@+id/button_time_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:text="18:00"
+            android:backgroundTint="#ff7f00"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="4dp" />
+
+        <Button
+            android:id="@+id/button_time_19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:text="19:00"
+            android:backgroundTint="#ff7f00"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="4dp" />
+        <Button
+            android:id="@+id/button_time_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:text="20:00"
+            android:backgroundTint="#ff7f00"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="4dp"/>
+
+    </LinearLayout>
+
+    <!-- 사람 수 -->
+    <TextView
+        android:id="@+id/textView_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인원 수"
+        android:textStyle="bold"
+        android:layout_marginVertical="10dp"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:textSize="20dp"
+            android:backgroundTint="#81C147"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_people_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:text="1"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20dp"
+            android:backgroundTint="#81C147"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- 예약 버튼 -->
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#fc3f00"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="21dp"
+        android:text="확인" />
+</LinearLayout>
